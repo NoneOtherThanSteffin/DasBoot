@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping
 public class HomeController {
 
-	@RequestMapping(value  = "/home", method = RequestMethod.POST)
+	@RequestMapping("home")
 	public String hello() {
 		return "This is the first spring boot application";
 	}
